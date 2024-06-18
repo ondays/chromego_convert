@@ -474,20 +474,6 @@ proxies:
     skip-cert-verify: true
     alpn:
       - h3
-  - name: FR 🇫🇷-Hysteria | 1-0
-    type: hysteria
-    server: 62.210.243.131
-    port: 18702
-    ports: 18702
-    auth-str: dongtaiwang.com
-    up: 80
-    down: 100
-    fast-open: true
-    protocol: udp
-    sni: bing.com
-    skip-cert-verify: true
-    alpn:
-      - h3
   - name: FR 🇫🇷-Hysteria | 2-0
     type: hysteria
     server: 62.210.243.131
@@ -526,21 +512,6 @@ proxies:
   - name: Unknown 🇺🇳-vless | 1-0
     type: vless
     server: yh6.dtku41.xyz
-    port: 443
-    uuid: ebfdccb6-7416-4b6e-860d-98587344d500
-    tls: true
-    servername: lg1.freessr2.xyz
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /xyakws
-      headers:
-        Host: lg1.freessr2.xyz
-    grpc-opts:
-      serviceName: /
-  - name: Unknown 🇺🇳-vless | 2-0
-    type: vless
-    server: yh9.dtku41.xyz
     port: 443
     uuid: ebfdccb6-7416-4b6e-860d-98587344d500
     tls: true
@@ -603,12 +574,10 @@ proxy-groups:
       - US 🇺🇸-vless | 8-1
       - US 🇺🇸-ss | 9-1
       - FR 🇫🇷-Hysteria | 0-0
-      - FR 🇫🇷-Hysteria | 1-0
       - FR 🇫🇷-Hysteria | 2-0
       - FR 🇫🇷-Hysteria | 3-0
       - US 🇺🇸-Hysteria2 | 0-0
       - Unknown 🇺🇳-vless | 1-0
-      - Unknown 🇺🇳-vless | 2-0
       - Unknown 🇺🇳-vless | 3-0
   - name: ♻️ 自动选择
     type: url-test
@@ -645,12 +614,10 @@ proxy-groups:
       - US 🇺🇸-vless | 8-1
       - US 🇺🇸-ss | 9-1
       - FR 🇫🇷-Hysteria | 0-0
-      - FR 🇫🇷-Hysteria | 1-0
       - FR 🇫🇷-Hysteria | 2-0
       - FR 🇫🇷-Hysteria | 3-0
       - US 🇺🇸-Hysteria2 | 0-0
       - Unknown 🇺🇳-vless | 1-0
-      - Unknown 🇺🇳-vless | 2-0
       - Unknown 🇺🇳-vless | 3-0
   - name: 📺 巴哈姆特
     type: select
